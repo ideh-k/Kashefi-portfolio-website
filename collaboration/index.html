@@ -12,7 +12,18 @@
       <link rel="stylesheet" href="../assets/styles/theme-e4c9292e.css" type="text/css">
     <link rel="canonical" href="https://kashefidesign.com/collaboration/">
       <title>Ideh Kashefineyshaburi - Collaboration</title>
-    <link rel="stylesheet" href="../assets/styles/fonts.css"><link rel="stylesheet" href="../assets/styles/overrides.css"><script src="../assets/scripts/portfolio.js" defer></script></head>
+    <link rel="stylesheet" href="../assets/styles/fonts.css"><link rel="stylesheet" href="../assets/styles/overrides.css"><script src="../assets/scripts/portfolio.js" defer></script><style id="portfolio-page-layout">
+/* Keep the ornament photographs together in one balanced row. */
+#project-modules .grid--main { display:grid !important; grid-template-columns:1.294498fr 1.277955fr 1.327434fr 1.323043fr; gap:8px; margin:0; width:100%; }
+#project-modules .grid__item-container { width:100% !important; min-width:0; flex:none !important; border:0 !important; box-sizing:border-box !important; }
+#project-modules .grid__item-image { position:static; display:block; width:100%; height:auto; }
+#project-modules .grid__item-filler, #project-modules .grid__item-spacer { display:none; }
+#project-modules .project-module-media_collection { margin-top:0; margin-bottom:8px; }
+@media(max-width:900px) { #project-modules .grid--main {grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media(max-width:540px) { #project-modules .grid--main {grid-template-columns:1fr;} }
+
+</style>
+</head>
   <body class="" data-contact-email="zahra.kashefi@gmail.com">  <div class="page-background-video page-background-video-with-panel">
   </div>
   <div class="js-responsive-nav">
