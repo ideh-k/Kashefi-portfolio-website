@@ -14,7 +14,57 @@
       <link rel="stylesheet" href="../assets/styles/theme-42b89b83.css" type="text/css">
     <link rel="canonical" href="https://kashefidesign.com/interior-design-3d/">
       <title>Ideh Kashefineyshaburi - Interior Design - 3D</title>
-    <link rel="stylesheet" href="../assets/styles/fonts.css"><link rel="stylesheet" href="../assets/styles/overrides.css"><script src="../assets/scripts/portfolio.js" defer></script></head>
+    <link rel="stylesheet" href="../assets/styles/fonts.css"><link rel="stylesheet" href="../assets/styles/overrides.css"><script src="../assets/scripts/portfolio.js" defer></script><style id="interior-gallery-layout">
+/* Interior Design: galleries match the text width. */
+#project-modules {
+  --gallery-columns: 2;
+  --gallery-gap: 8px;
+}
+#project-modules .interior-gallery {
+  display: grid;
+  grid-template-columns: repeat(var(--gallery-columns), minmax(0, 1fr));
+  gap: var(--gallery-gap);
+  width: 100%;
+  margin: 0;
+  align-items: start;
+}
+#project-modules .interior-gallery__item {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+#project-modules .interior-gallery__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+#project-modules > .project-module-media_collection,
+#project-modules > .project-module-image,
+#project-modules > .project-module-image > .js-lightbox {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+#project-modules > .project-module-image img {
+  width: 100%;
+  height: auto !important;
+  padding-bottom: 0 !important;
+}
+@media (max-width: 768px) {
+  #project-modules {
+    padding-inline: 5%;
+    box-sizing: border-box;
+  }
+  #project-modules > .project-module-text {
+    padding-inline: 0;
+  }
+}
+@media (max-width: 540px) {
+  #project-modules { --gallery-columns: 1; }
+}
+</style></head>
 
   <body class="" data-contact-email="zahra.kashefi@gmail.com">  <div class="page-background-video page-background-video-with-panel">
   </div>
@@ -92,10 +142,7 @@
               
               
               
-              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="padding-top: px;
-padding-bottom: px;
-  max-width: 1400px;
-">
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="max-width: 1400px;">
   <div class="rich-text js-text-editable module-text"><div class="sub-title">Cafe Diem Re-Branding Project</div><div class="main-text">Revitalizing a downtown Ames coffee shop through a rebranding initiative. The primary objective is to cultivate a distinctive identity characterized by a niche, minimalistic, and clean aesthetic. The creative direction is inspired by a space and cosmos theme, aligning seamlessly with the project brief to create a visually engaging and unique brand and interior presence. For this project, the actual coffee shop's map was used to design the interior accurately.<br></div></div>
 </div>
 
@@ -110,71 +157,54 @@ padding-bottom: px;
               
               
               
-              <div class="project-module module media_collection project-module-media_collection" data-id="m690bd5a9cbcd0df256bc30485dcb404baf5c12a7be0ac4694f329" style="padding-top: px;
-padding-bottom: px;
-">
-  <div class="grid--main js-grid-main" data-grid-max-images="
-  ">
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="353.74149659864" style="width:353.74149659864px; flex-grow:353.74149659864;" data-width="600" data-height="441">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/c17583d2e6cf.webp" data-full-size="../assets/images/c17583d2e6cf.webp" decoding="async" loading="eager" width="600" height="441" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:73.5%;"></span>
+              <div class="project-module module media_collection project-module-media_collection" data-id="m690bd5a9cbcd0df256bc30485dcb404baf5c12a7be0ac4694f329">
+  <div class="interior-gallery">
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/c17583d2e6cf.webp" data-full-size="../assets/images/c17583d2e6cf.webp" decoding="async" loading="eager" width="600" height="441" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/a91bb1edd83f.webp" data-full-size="../assets/images/a91bb1edd83f.webp" srcset="../assets/images/a91bb1edd83f-small.webp 720w, ../assets/images/a91bb1edd83f.webp 1800w" decoding="async" loading="eager" width="1800" height="1013" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/cc8f191cad37.webp" data-full-size="../assets/images/cc8f191cad37.webp" srcset="../assets/images/cc8f191cad37-small.webp 720w, ../assets/images/cc8f191cad37.webp 1800w" decoding="async" loading="eager" width="1800" height="1013" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/a65c525179d3.webp" data-full-size="../assets/images/a65c525179d3.webp" srcset="../assets/images/a65c525179d3-small.webp 720w, ../assets/images/a65c525179d3.webp 1200w" decoding="async" loading="eager" width="1200" height="336" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/336aee023304.webp" data-full-size="../assets/images/336aee023304.webp" srcset="../assets/images/336aee023304-small.webp 720w, ../assets/images/336aee023304.webp 1080w" decoding="async" loading="eager" width="1080" height="1080" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/eb2d390fb59a.webp" data-full-size="../assets/images/eb2d390fb59a.webp" srcset="../assets/images/eb2d390fb59a-small.webp 720w, ../assets/images/eb2d390fb59a.webp 1080w" decoding="async" loading="eager" width="1080" height="1080" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/27d9a19ff628.webp" data-full-size="../assets/images/27d9a19ff628.webp" srcset="../assets/images/27d9a19ff628-small.webp 720w, ../assets/images/27d9a19ff628.webp 1200w" decoding="async" loading="eager" width="1200" height="675" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/68ed1f9152cc.webp" data-full-size="../assets/images/68ed1f9152cc.webp" srcset="../assets/images/68ed1f9152cc-small.webp 720w, ../assets/images/68ed1f9152cc.webp 1200w" decoding="async" loading="lazy" width="1200" height="675" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/7d7951225b4b.webp" data-full-size="../assets/images/7d7951225b4b.webp" srcset="../assets/images/7d7951225b4b-small.webp 720w, ../assets/images/7d7951225b4b.webp 1200w" decoding="async" loading="lazy" width="1200" height="675" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/7e2a45fbb00e.webp" data-full-size="../assets/images/7e2a45fbb00e.webp" decoding="async" loading="lazy" width="600" height="441" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/8fe5d2de8b15.webp" data-full-size="../assets/images/8fe5d2de8b15.webp" srcset="../assets/images/8fe5d2de8b15-small.webp 720w, ../assets/images/8fe5d2de8b15.webp 1800w" decoding="async" loading="lazy" width="1800" height="1013" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
     </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="461.53846153846" style="width:461.53846153846px; flex-grow:461.53846153846;" data-width="600" data-height="338">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/a91bb1edd83f.webp" data-full-size="../assets/images/a91bb1edd83f.webp" srcset="../assets/images/a91bb1edd83f-small.webp 720w, ../assets/images/a91bb1edd83f.webp 1800w" decoding="async" loading="eager" width="1800" height="1013" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:56.333333333333%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="462.22222222222" style="width:462.22222222222px; flex-grow:462.22222222222;" data-width="1200" data-height="675">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/cc8f191cad37.webp" data-full-size="../assets/images/cc8f191cad37.webp" srcset="../assets/images/cc8f191cad37-small.webp 720w, ../assets/images/cc8f191cad37.webp 1800w" decoding="async" loading="eager" width="1800" height="1013" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:56.25%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="928.57142857143" style="width:928.57142857143px; flex-grow:928.57142857143;" data-width="1200" data-height="336">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/a65c525179d3.webp" data-full-size="../assets/images/a65c525179d3.webp" srcset="../assets/images/a65c525179d3-small.webp 720w, ../assets/images/a65c525179d3.webp 1200w" decoding="async" loading="eager" width="1200" height="336" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:28%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="1080" data-height="1080">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/336aee023304.webp" data-full-size="../assets/images/336aee023304.webp" srcset="../assets/images/336aee023304-small.webp 720w, ../assets/images/336aee023304.webp 1080w" decoding="async" loading="eager" width="1080" height="1080" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="1080" data-height="1080">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/eb2d390fb59a.webp" data-full-size="../assets/images/eb2d390fb59a.webp" srcset="../assets/images/eb2d390fb59a-small.webp 720w, ../assets/images/eb2d390fb59a.webp 1080w" decoding="async" loading="eager" width="1080" height="1080" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="462.22222222222" style="width:462.22222222222px; flex-grow:462.22222222222;" data-width="1200" data-height="675">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/27d9a19ff628.webp" data-full-size="../assets/images/27d9a19ff628.webp" srcset="../assets/images/27d9a19ff628-small.webp 720w, ../assets/images/27d9a19ff628.webp 1200w" decoding="async" loading="eager" width="1200" height="675" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:56.25%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="462.22222222222" style="width:462.22222222222px; flex-grow:462.22222222222;" data-width="1200" data-height="675">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/68ed1f9152cc.webp" data-full-size="../assets/images/68ed1f9152cc.webp" srcset="../assets/images/68ed1f9152cc-small.webp 720w, ../assets/images/68ed1f9152cc.webp 1200w" decoding="async" loading="lazy" width="1200" height="675" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:56.25%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="462.22222222222" style="width:462.22222222222px; flex-grow:462.22222222222;" data-width="1200" data-height="675">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/7d7951225b4b.webp" data-full-size="../assets/images/7d7951225b4b.webp" srcset="../assets/images/7d7951225b4b-small.webp 720w, ../assets/images/7d7951225b4b.webp 1200w" decoding="async" loading="lazy" width="1200" height="675" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:56.25%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="353.74149659864" style="width:353.74149659864px; flex-grow:353.74149659864;" data-width="600" data-height="441">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/7e2a45fbb00e.webp" data-full-size="../assets/images/7e2a45fbb00e.webp" decoding="async" loading="lazy" width="600" height="441" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:73.5%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="462.22222222222" style="width:462.22222222222px; flex-grow:462.22222222222;" data-width="1920" data-height="1080">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/8fe5d2de8b15.webp" data-full-size="../assets/images/8fe5d2de8b15.webp" srcset="../assets/images/8fe5d2de8b15-small.webp 720w, ../assets/images/8fe5d2de8b15.webp 1800w" decoding="async" loading="lazy" width="1800" height="1013" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:56.25%;"></span>
-    </div>
-    <div class="js-grid-spacer"></div>
-  </div>
 </div>
 
               
               
               
-              <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-">
+              <div class="project-module module image project-module-image js-js-project-module">
 
   
 
   
      <div class="js-lightbox" data-src="../assets/images/38c5d5780b35.webp">
-           <img class="e2e-site-project-module-image" src="../assets/images/38c5d5780b35.webp" width="1800" height="1628" style="padding-bottom: 90.33%; background: rgba(0, 0, 0, 0.03)" data-full-size="../assets/images/38c5d5780b35.webp" srcset="../assets/images/38c5d5780b35-small.webp 720w, ../assets/images/38c5d5780b35.webp 1800w" decoding="async" loading="lazy" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+           <img class="e2e-site-project-module-image" src="../assets/images/38c5d5780b35.webp" width="1800" height="1628" data-full-size="../assets/images/38c5d5780b35.webp" srcset="../assets/images/38c5d5780b35-small.webp 720w, ../assets/images/38c5d5780b35.webp 1800w" decoding="async" loading="lazy" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
      </div>
   
 
@@ -193,10 +223,7 @@ padding-bottom: px;
               
               
               
-              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="padding-top: px;
-padding-bottom: px;
-  max-width: 1400px;
-">
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="max-width: 1400px;">
   <div class="rich-text js-text-editable module-text"><div class="sub-title"><span style="font-family:verdana;">Room Interior Design</span><br></div><div>This 3D project involved rendering an isometric view of a bedroom, with the primary focus on exploring the simulation engines and the intricate application of textures. The bedroom was meticulously modeled to capture a cozy and modern aesthetic, featuring detailed furniture, soft lighting, and subtle decorative elements. The project aimed to push the boundaries of texture realism, from the soft fabric of the bedding to the wood grain of the flooring and furniture. Using simulation engines allowed for a more dynamic environment, enabling real-time adjustments and enhancing the overall quality of the render.<br></div></div>
 </div>
 
@@ -211,21 +238,15 @@ padding-bottom: px;
               
               
               
-              <div class="project-module module media_collection project-module-media_collection" data-id="m690bd74d89282a8124062c8683026dbfb8bd91ea473d5d7eadfba" style="padding-top: px;
-padding-bottom: px;
-">
-  <div class="grid--main js-grid-main" data-grid-max-images="
-  ">
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="600" data-height="600">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/b06a669efbe0.webp" data-full-size="../assets/images/b06a669efbe0.webp" decoding="async" loading="lazy" width="600" height="600" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
+              <div class="project-module module media_collection project-module-media_collection" data-id="m690bd74d89282a8124062c8683026dbfb8bd91ea473d5d7eadfba">
+  <div class="interior-gallery">
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/b06a669efbe0.webp" data-full-size="../assets/images/b06a669efbe0.webp" decoding="async" loading="lazy" width="600" height="600" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/2a0e74259847.webp" data-full-size="../assets/images/2a0e74259847.webp" decoding="async" loading="lazy" width="600" height="600" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
     </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="600" data-height="600">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/2a0e74259847.webp" data-full-size="../assets/images/2a0e74259847.webp" decoding="async" loading="lazy" width="600" height="600" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
-    </div>
-    <div class="js-grid-spacer"></div>
-  </div>
 </div>
 
               
@@ -237,21 +258,15 @@ padding-bottom: px;
               
               
               
-              <div class="project-module module media_collection project-module-media_collection" data-id="m690bd7ea510a54cf9b9116c1723caac8238d6917a6d8da3b286d2" style="padding-top: px;
-padding-bottom: px;
-">
-  <div class="grid--main js-grid-main" data-grid-max-images="
-  ">
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="413.24503311258" style="width:413.24503311258px; flex-grow:413.24503311258;" data-width="1200" data-height="755">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/43633c38c5e3.webp" data-full-size="../assets/images/43633c38c5e3.webp" srcset="../assets/images/43633c38c5e3-small.webp 720w, ../assets/images/43633c38c5e3.webp 1200w" decoding="async" loading="lazy" width="1200" height="755" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:62.916666666667%;"></span>
+              <div class="project-module module media_collection project-module-media_collection" data-id="m690bd7ea510a54cf9b9116c1723caac8238d6917a6d8da3b286d2">
+  <div class="interior-gallery">
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/43633c38c5e3.webp" data-full-size="../assets/images/43633c38c5e3.webp" srcset="../assets/images/43633c38c5e3-small.webp 720w, ../assets/images/43633c38c5e3.webp 1200w" decoding="async" loading="lazy" width="1200" height="755" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
+    <div class="interior-gallery__item js-grid-item-container">
+      <img class="interior-gallery__image" src="../assets/images/71fc7c68868c.webp" data-full-size="../assets/images/71fc7c68868c.webp" decoding="async" loading="lazy" width="600" height="600" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 90vw, (max-width: 768px) 45vw, (max-width: 1400px) 46vw, 640px">
+      </div>
     </div>
-    <div class="grid__item-container js-grid-item-container" data-flex-grow="260" style="width:260px; flex-grow:260;" data-width="600" data-height="600">
-      <img class="grid__item-image js-grid__item-image" src="../assets/images/71fc7c68868c.webp" data-full-size="../assets/images/71fc7c68868c.webp" decoding="async" loading="lazy" width="600" height="600" alt="Interior Design - 3D — artwork" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
-      <span class="grid__item-filler" style="padding-bottom:100%;"></span>
-    </div>
-    <div class="js-grid-spacer"></div>
-  </div>
 </div>
 
               
