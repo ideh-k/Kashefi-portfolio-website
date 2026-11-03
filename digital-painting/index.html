@@ -14,7 +14,16 @@
       <link rel="stylesheet" href="../assets/styles/theme-f26daa07.css" type="text/css">
     <link rel="canonical" href="https://kashefidesign.com/digital-painting/">
       <title>Ideh Kashefineyshaburi - Digital Painting</title>
-    <link rel="stylesheet" href="../assets/styles/fonts.css"><link rel="stylesheet" href="../assets/styles/overrides.css"><script src="../assets/scripts/portfolio.js" defer></script></head>
+    <link rel="stylesheet" href="../assets/styles/fonts.css"><link rel="stylesheet" href="../assets/styles/overrides.css"><script src="../assets/scripts/portfolio.js" defer></script><style id="portfolio-page-layout">
+/* Two complete paintings per row, with the existing page margins. */
+#project-modules .grid--main { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; width:100%; margin:0; }
+#project-modules .grid__item-container { width:100% !important; min-width:0; flex:none !important; border:0 !important; box-sizing:border-box !important; }
+#project-modules .grid__item-image { position:static; display:block; width:100%; height:auto; }
+#project-modules .grid__item-filler, #project-modules .grid__item-spacer {display:none;}
+@media(max-width:540px) { #project-modules .grid--main {grid-template-columns:1fr;} #project-modules {padding-inline:16px;} }
+
+</style>
+</head>
   <body class="" data-contact-email="zahra.kashefi@gmail.com">  <div class="page-background-video page-background-video-with-panel">
   </div>
   <div class="js-responsive-nav">
