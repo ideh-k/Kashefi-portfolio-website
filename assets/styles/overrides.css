@@ -1,0 +1,145 @@
+/* Standalone behavior and accessibility; the original layout remains in the
+   accompanying page stylesheets. */
+html { scroll-behavior: smooth; }
+body, .site-wrap, .site-container, .site-content, .page-content { opacity: 1 !important; }
+body { min-width: 0; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+.logo img { width: auto !important; height: auto !important; }
+.embed-aspect-ratio .portfolio-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #191919; }
+.project-module-image img { display: block; height: auto !important; padding-bottom: 0 !important; }
+.js-lazy, .grid__item-image-lazy { opacity: 1 !important; visibility: visible !important; }
+.grid--main { visibility: visible !important; }
+.grid__item-spacer { width: 0; flex-basis: 0; }
+.portfolio-image-trigger { cursor: zoom-in; }
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #1e6878;
+  outline-offset: 5px;
+}
+button.js-hamburger, button.js-close-responsive-nav {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+button.js-hamburger { display: none; }
+.js-responsive-nav { display: none !important; }
+body.portfolio-menu-open, body.portfolio-lightbox-open { overflow: hidden; }
+body.portfolio-menu-open .js-responsive-nav:not([hidden]) {
+  display: block !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 10000 !important;
+  width: 100% !important;
+  height: 100dvh !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  background: #fff;
+  overflow-y: auto;
+}
+body.portfolio-menu-open .js-responsive-nav .responsive-nav {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-height: 100dvh !important;
+  height: auto !important;
+  padding: 100px 30px 50px !important;
+  box-sizing: border-box;
+  background: #fff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+body.portfolio-menu-open .js-responsive-nav .nav-container { display: block !important; }
+body.portfolio-menu-open .js-responsive-nav nav { display: flex !important; flex-direction: column; align-items: center; gap: 28px; }
+body.portfolio-menu-open .js-responsive-nav nav > div { display: block !important; margin: 0 !important; padding: 0 !important; }
+body.portfolio-menu-open .js-responsive-nav nav a { display: inline-block; font-size: 22px; line-height: 1.4; }
+body.portfolio-menu-open .js-close-responsive-nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  top: 25px !important;
+  right: 25px !important;
+  width: 44px !important;
+  height: 44px !important;
+}
+body.portfolio-menu-open .close-responsive-button { position: relative !important; inset: auto !important; display: block; width: 20px; height: 20px; }
+.portfolio-lightbox {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  padding: 60px 76px 36px;
+  margin: 0;
+  border: 0;
+  color: #161616;
+  background: rgba(255,255,255,.97);
+  overflow: auto;
+  z-index: 20000;
+}
+.portfolio-lightbox[open] { display: grid; grid-template-columns: minmax(0,1fr); place-items: center; }
+.portfolio-lightbox::backdrop { background: rgba(255,255,255,.96); }
+.portfolio-lightbox__figure { margin: 0; text-align: center; width: 100%; }
+.portfolio-lightbox__image { display: block; width: auto; max-width: 100%; height: auto; max-height: calc(100dvh - 150px); object-fit: contain; margin: 0 auto; }
+.portfolio-lightbox__caption, .portfolio-lightbox__counter { color: #555; font-size: 13px; line-height: 1.5; margin: 12px 0 0; }
+.portfolio-lightbox__counter { margin-top: 6px; font-variant-numeric: tabular-nums; }
+.portfolio-lightbox button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  appearance: none;
+  border: 0;
+  background: rgba(255,255,255,.92);
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+.portfolio-lightbox__close { top: 18px; right: 20px; font-size: 34px !important; }
+.portfolio-lightbox__previous { top: calc(50% - 22px); left: 15px; }
+.portfolio-lightbox__next { top: calc(50% - 22px); right: 15px; }
+.js-back-to-top { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+.js-back-to-top.portfolio-back-to-top-visible { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+button.submit-button {
+  appearance: none;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  font: inherit;
+  text-align: center;
+}
+button.submit-button:disabled { cursor: default; opacity: .5; }
+.portfolio-contact-note { max-width: 640px; font-size: 13px !important; line-height: 1.7 !important; margin: 18px 0 0 !important; color: #666; }
+.portfolio-contact-note a { color: inherit; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.portfolio-case-study-button { padding-top: 18px !important; padding-bottom: 28px !important; }
+.portfolio-case-study-button .button-module { display: inline-block; padding: 13px 24px; background: #171717; border: 1px solid #171717; color: #fff; font: 600 13px/1.5 vcsm, sans-serif; text-decoration: none; transition: background .2s, color .2s; }
+.portfolio-case-study-button .button-module:hover { background: #fff; color: #171717; }
+@media (max-width: 768px) {
+  button.js-hamburger { display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+  .portfolio-lightbox { padding: 65px 45px 30px; }
+  .portfolio-lightbox__previous { left: 0; }
+  .portfolio-lightbox__next { right: 0; }
+  .portfolio-lightbox__close { right: 10px; top: 10px; }
+  .portfolio-lightbox__image { max-height: calc(100dvh - 150px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

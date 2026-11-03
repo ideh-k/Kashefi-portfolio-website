@@ -1,0 +1,5 @@
+/* Locally hosted open-source typefaces replace subscription-only web fonts. */
+@font-face {font-family:vcsm; font-style:normal; font-weight:400; font-display:swap; src:url(../fonts/montserrat-regular.ttf) format('truetype')}
+@font-face {font-family:vcsm; font-style:normal; font-weight:600; font-display:swap; src:url(../fonts/montserrat-semibold.ttf) format('truetype')}
+@font-face {font-family:vcsm; font-style:normal; font-weight:700; font-display:swap; src:url(../fonts/montserrat-bold.ttf) format('truetype')}
+@font-face {font-family:gmsj; font-style:normal; font-weight:700; font-display:swap; src:url(../fonts/roboto-slab-bold.ttf) format('truetype')}
